@@ -1,11 +1,18 @@
-Litecoin - a lite version of Bitcoin optimized for CPU mining using scrypt as a proof of work scheme.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+Junkcoin - a fork of Litecoin version with random bonus blocks. Like Litecoin it uses scrypt as a proof of work scheme.
 
-The rest is the same as bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+	- Total coins will be around 54 millions
+	- Mining will be shut down after 12 years.
+	- 2 minutes block target
+	- Difficulty retargets once per day
+	- To encorage early adoption the coins per block is high for the first 4 days:
+		- 1st day: 500 coins per block
+		- 2nd day: 200 coins per block
+		- 3rd/4th days: 100 coins per block
+	- Starting 5th day, it will be 50 coins per block, will be halved every two years (or 518400 blocks).
+	- In regular mining (after first 4 bonus days), there will be 1% chance a block will yield triple of the normal coins (e.g. in the first 2 years there's 1% chance you get 150 coins per block).
+	- There is also 1/10,000 (0.01%) chance that a block will yield 1000 coins. This is valid for all 12 years of the mining.
+	- The default ports are 9771(connect) and 9772(json rpc).
+
 
 Development process
 ===================
@@ -34,5 +41,3 @@ in this manner will have their corresponding issue labeled 'stagnant'.
 Issues with no commits will be given a similar warning, and closed after
 15 days from their last activity. Issues closed in this manner will be 
 labeled 'stale'. 
-
-Check out http://forum.litecoin.net/index.php/board,2.0.html for more info about the development.

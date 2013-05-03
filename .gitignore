@@ -1,7 +1,6 @@
 src/*.exe
-src/litecoin
-src/litecoind
-src/test_litecoin
+src/junkcoind
+src/test_junkcoin
 src/build.h
 .*.swp
 *.*~*
@@ -14,7 +13,7 @@ src/build.h
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-litecoin-qt
+junkcoin-qt
 #resources cpp
 qrc_*.cpp
 #qt creator
@@ -22,3 +21,7 @@ qrc_*.cpp
 #mac specific
 .DS_Store
 build
+debug
+release
+debug/*.*
+release/*.*
